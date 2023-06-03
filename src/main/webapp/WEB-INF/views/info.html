@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h3>View Article</h3>
+<p>
+  <a th:href="@{/list}">
+    Back to article list
+  </a>
+</p>
+<div id="artice">
+  <div class="adetail">
+    <label>Title:</label>
+    <label th:text="${article.getTitle()}"></label>
+  </div>
+  <div class="adetail">
+    <label>Content:</label>
+    <label th:text="${article.content}"></label>
+  </div>
+  <div class="adetail">
+    <label>Created Date:</label>
+    <label th:text="${article.created_date}"></label>
+  </div>
+</div>
+</body>
+</html>
